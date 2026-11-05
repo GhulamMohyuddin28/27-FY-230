@@ -24,3 +24,7 @@ test('no page is empty', () => {
     assert.ok(size > 0, p + ' is empty');
   }
 });
+
+test('the services page exists', () => {
+  assert.ok(fs.existsSync('out/services.html'));
+});
