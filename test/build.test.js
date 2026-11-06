@@ -24,7 +24,3 @@ test('no page is empty', () => {
     assert.ok(size > 0, p + ' is empty');
   }
 });
-
-test('intentional failure for branch protection', () => {
-  assert.equal(1, 2);
-});
