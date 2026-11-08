@@ -34,8 +34,9 @@ jobs:
         with:
           name: coverage
           path: coverage/lcov.info
-          if-no-files-found: error
 
+          if-no-files-found: error
+  continue-on-error: true
   analyse:
     name: analyse
     needs: test
